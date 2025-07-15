@@ -5,7 +5,7 @@ import os
 
 # Add the src/data_structures directory to Python's path
 # This allows pytest to find your HashTable class
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(_file_), '..', 'src', 'data_structures')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src', 'data_structures')))
 
 # Import your HashTable class
 from hash_table import HashTable
@@ -57,4 +57,4 @@ def test_hash_table_delete_metadata():
 def test_hash_table_empty():
     ht = HashTable()
     assert ht.get_metadata("any_id") == {}
-    ht.delete_metadata("any_id") # Deleting from empty should be fine
+    ht.delete_metadata("any_id") # Deleting from empty should be fine
