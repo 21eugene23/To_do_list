@@ -7,7 +7,7 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src', 'data_structures')))
 
 # Import your Queue class
-from PriorityQueue import Queue
+from reminder_queue import Queue
 
 # A simple Reminder class for testing purposes
 class Reminder:
